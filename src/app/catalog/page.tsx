@@ -1,6 +1,7 @@
 import Card from '@/components/Card/Card';
 import goods from './goods.json';
 import { notFound } from 'next/navigation';
+import style from './catalog.module.css';
 
 export default function Catalog() {
   const categories = goods?.catalog?.map((category) => {
@@ -10,7 +11,7 @@ export default function Catalog() {
   if (!categories || categories?.length === 0) return notFound();
 
   return (
-    <div>
+    <div className={style.catalogWrapper}>
       {categories}
     </div>
   )

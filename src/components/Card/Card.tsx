@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import style from './Card.module.css';
 
 interface ICardProps {
   title: string;
@@ -15,7 +16,7 @@ export default function Card({ title, category, description, price, isProduct, p
 
 
   return (
-    <Link className="card" href={href}>
+    <Link className={style.Card} href={href}>
       <h2>{title}</h2>
       {description && <p>{description}</p>}
       {price && <p>{price.toFixed(2)}$</p>}

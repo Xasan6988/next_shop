@@ -1,6 +1,7 @@
 import goods from '@/app/catalog/goods.json'
 import Card from '@/components/Card/Card';
 import { notFound } from 'next/navigation';
+import style from './category.module.css';
 
 interface ICategoryParams {
   params: Promise<{category: string}>
@@ -18,7 +19,7 @@ export default async function Category({params}: ICategoryParams) {
   })
 
   return (
-    <div>
+    <div className={style.Category}>
       {goodsLayout}
     </div>
   )

@@ -1,0 +1,19 @@
+.Card {
+  min-width: 370px;
+  min-height: 370px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #2d4855;
+  border: 1px solid lightcoral;
+  border-radius: 8px;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.Card p {
+  max-width: 330px;
+  white-space: wrap;
+  text-align: center;
+}
